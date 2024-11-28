@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="username">अपना यूज़रनेम लिखें</string>
+    <string name="password">अपना पासवर्ड लिखें</string>
+    <string name="rem">मुझे याद रखें</string>
+    <string name="forgot">पासवर्ड भूल गए?</string>
+    <string name="sign">साइन इन</string>
+    <string name="lang">भाषा बदलें</string>
+</resources>

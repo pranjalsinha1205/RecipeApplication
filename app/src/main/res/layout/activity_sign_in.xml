@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signin"
+    tools:context=".SignIn">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20pt"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="bold"
+        android:text="Sign In"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".1"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".1"
+        android:hint="@string/username"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".05"
+        android:hint="@string/password"/>
+
+    <CheckBox
+        android:id="@+id/remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/password"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".05"
+        android:textSize="6.5pt"
+        android:text="@string/rem"/>
+
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot"
+        app:layout_constraintEnd_toEndOf="@id/password"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".08"
+        android:textSize="7pt"
+        android:textColor="@color/navy"/>
+
+    <ImageButton
+        android:id="@+id/signin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent=".3"
+        app:layout_constraintHeight_percent=".08"
+        app:layout_constraintStart_toStartOf="@id/password"
+        app:layout_constraintEnd_toEndOf="@id/password"
+        android:background="@color/sky"
+        app:layout_constraintTop_toBottomOf="@id/remember"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".1"/>
+
+    <TextView
+        android:id="@+id/signText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/signin"
+        app:layout_constraintEnd_toEndOf="@id/signin"
+        app:layout_constraintTop_toTopOf="@id/signin"
+        app:layout_constraintBottom_toBottomOf="@id/signin"
+        android:textSize="10pt"/>
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/lang"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintWidth_percent=".8"-->
+<!--        app:layout_constraintHeight_percent=".08"-->
+<!--        app:layout_constraintStart_toStartOf="@id/password"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/password"-->
+<!--        android:background="@color/navy"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/signin"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintVertical_bias=".3"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/langText"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/lang"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:layout_constraintStart_toStartOf="@id/lang"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/lang"-->
+<!--        app:layout_constraintTop_toTopOf="@id/lang"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/lang"-->
+<!--        android:textSize="12pt"/>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
